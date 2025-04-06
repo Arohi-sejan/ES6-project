@@ -21,8 +21,10 @@ const Bolg = ({bolg , handeleAddBookmark ,handelMarkAsRead}) => {
         <button onClick={()=>handeleAddBookmark(bolg)}><FaBookmark  size={25} /></button>
     </div>
     <div className=' text-center justify-center  items-center mt-5'>
-    <h2 className=" text-center mx-0 mx-auto text-2xl font-bold  text-black">{bolg.title}</h2>
-    <p className='text-center text-xl font-semibold text-gray-400 '>A card component has a figure, <br></br> a body part, and inside body there are title and actions parts</p>
+    <h2 className=" text-center mx-0 text-2xl font-bold  text-black">{bolg.title}</h2>
+    <h2 className=" text-center mx-0 text-2xl font-bold  text-black">{bolg.posted_date}</h2>
+
+    <p className='text-center text-xl font-semibold text-gray-400 animate-text bg-gradient-to-r from-pink-500 via-yellow-500 to-green-500 bg-clip-text text-transparent'>A card component has a figure, <br></br> a body part, and inside body there are title and actions parts</p>
     </div>
     <div className='flex mt-5'>
     {

@@ -5,9 +5,11 @@ import './animation.css'
 import Bolgs from './componats/Blogs/Bolgs'
 import Navbar from './componats/navbar/Navbar'
 
+
 function App() {
   const [bookmarked , setbookmarked] = useState([]);
   const [readingCount , setReadingCount] = useState(0);
+  
 
   const handeleAddBookmark = (bolg)=>{
   setbookmarked([...bookmarked , bolg])
